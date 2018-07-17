@@ -1,0 +1,20 @@
+$ORIGIN ***.com.
+$TTL 1D
+
+@     IN SOA   ***.com. hostmaster.***.com. (
+                        2017052001 ; serial
+                        8H        ; refresh
+                        4H        ; retry
+                        4W        ; expire
+                        1D )      ; minimum
+
+@    IN            NS      ns1.***.com.
+@    IN            MX      10 mail.***.com.
+
+www     IN  CNAME   web
+mail    IN  CNAME   web
+ftp		IN	CNAME   web
+
+***.com.	IN A       127.0.0.1
+web     	IN A       192.168.33.3
+ns1			IN A       192.168.33.3
